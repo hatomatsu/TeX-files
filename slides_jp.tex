@@ -1,0 +1,55 @@
+\documentclass[unicode,aspectratio=169, 12pt]{beamer}
+% \usepackage[ipaex]{luatexja-preset}
+\usepackage[sourcehan]{luatexja-preset}
+\usepackage{luatexja-fontspec}
+
+\usecolortheme{default}
+
+% themes
+\usetheme{Boadilla}
+
+% Set Japanese fonts
+% \setmainjfont{IPAexMincho}
+% \setsansjfont{IPAexGothic}
+% \setmonofont{IPAGothic}
+
+
+
+% Set Japanese Year/Month/Date
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+
+
+% navigations off
+\setbeamertemplate{navigation symbols}{} 
+
+
+
+\title{Beamer Presentation in Japanese}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{日本語のフレーム}
+  これは日本語のフレームです。
+\end{frame}
+
+\begin{frame}{Blocksの例}
+  \begin{block}{ブロックのタイトル}
+    これはブロックです。
+  \end{block}
+
+  \begin{exampleblock}{例題のタイトル}
+    これは例題のブロックです。
+  \end{exampleblock}
+
+  \begin{alertblock}{警告のタイトル}
+    これは警告のブロックです。
+  \end{alertblock}
+\end{frame}
+
+\end{document}

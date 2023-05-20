@@ -1,7 +1,7 @@
 \documentclass[unicode,aspectratio=169,12pt,xcolor=dvipsnames]{beamer}% 'unicode'
 \usepackage{luatexja}% luatex Japanese
-\usepackage[ipaex]{luatexja-preset}% IPAex font
-\renewcommand{\kanjifamilydefault}{\gtdefault}% setting japanese font to be gothic
+% \usepackage[ipaex]{luatexja-preset}% IPAex font
+% \renewcommand{\kanjifamilydefault}{\gtdefault}% setting japanese font to be gothic
 
 
 
@@ -39,56 +39,11 @@
 \usepackage{multirow}% for tabular
 \usepackage{xcolor}
 
-%%=============================================================================
-% code
-%%=============================================================================
-
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
 
 
-
-% \lstset
-% {
-%     language=C++,
-%     breaklines=true,
-%     showstringspaces=false,
-%     basicstyle=\scriptsize,
-%     numberstyle=\tiny,
-%     aboveskip=3pt,
-%     belowskip=3pt,
-%     keywordstyle=\color{magenta},
-%     identifierstyle=\color{cyan},
-%     commentstyle=\color{dkgreen},
-%     stringstyle=\color{yellow},
-%     backgroundcolor = \color{black!80},
-%     breaklines=true,
-%     breakatwhitespace=true,
-%     tabsize=3
-% }
-
-\usepackage{xcolor}
 \usepackage{hyperref}%
 
-% \renewenvironment{proof}{%
-%   \noindent\textbf{証明}\quad
-% }{%
-% \hspace{\fill}\square\\
-% }
 
-\newenvironment{claim}{%
-  \noindent\textbf{主張}\quad
-}{%
-
-}
-
-
-\newenvironment{remark}{%
-  \noindent\textbf{注意}\quad
-}{%
-
-}
 
 \newcommand{\R}{\mathbb R}
 \newcommand{\C}{\mathbb C}
@@ -115,7 +70,7 @@
 \newcommand{\dprime}{{\prime\prime}}
 
 
-\newcommand{\thmtext}{Text of theorem.}
+% \newcommand{\thmtext}{Text of theorem.}
 \DeclareMathOperator{\sgn}{sgn}
 
 \DeclareMathOperator{\Vect}{Vect}
@@ -145,8 +100,8 @@
 \titlepage
 
 \begin{frame}[fragile]
-  \frametitle{ }
-  
+  \frametitle{lide title }
+  contents
 \end{frame}
 
 \end{document}
