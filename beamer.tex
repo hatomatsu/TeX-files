@@ -1,0 +1,152 @@
+\documentclass[unicode,aspectratio=169,12pt,xcolor=dvipsnames]{beamer}% 'unicode'
+\usepackage{luatexja}% luatex Japanese
+\usepackage[ipaex]{luatexja-preset}% IPAex font
+\renewcommand{\kanjifamilydefault}{\gtdefault}% setting japanese font to be gothic
+
+
+
+
+% navigations off
+\setbeamertemplate{navigation symbols}{} % 
+
+% themes
+\usetheme{Boadilla}
+
+% For colors
+\usepackage[dvipsnames]{xcolor}
+% \definecolor{usercolor}{rgb}{0.12, 0.56, 1.0}
+%\usecolortheme[named=usercolor]{structure} % Sample dvipsnames color
+
+
+
+% usepackage
+\usepackage{amsmath, amssymb, amsfonts, latexsym, mathtools}
+\usepackage[amsmath,amsthm,thmmarks]{ntheorem}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{intersections,calc,arrows.meta}
+\usepackage{url}
+\usepackage{bm} % command \bm
+\usepackage{amscd} %For diagram
+\usepackage{cases} %For cases
+\usepackage{cancel} % cancel symbol
+\usepackage{subfig}
+\usepackage{physics}
+\usepackage{thmtools}
+\usepackage{thm-restate}
+\usepackage{multirow}% for tabular
+\usepackage{xcolor}
+
+%%=============================================================================
+% code
+%%=============================================================================
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+
+% \lstset
+% {
+%     language=C++,
+%     breaklines=true,
+%     showstringspaces=false,
+%     basicstyle=\scriptsize,
+%     numberstyle=\tiny,
+%     aboveskip=3pt,
+%     belowskip=3pt,
+%     keywordstyle=\color{magenta},
+%     identifierstyle=\color{cyan},
+%     commentstyle=\color{dkgreen},
+%     stringstyle=\color{yellow},
+%     backgroundcolor = \color{black!80},
+%     breaklines=true,
+%     breakatwhitespace=true,
+%     tabsize=3
+% }
+
+\usepackage{xcolor}
+\usepackage{hyperref}%
+
+% \renewenvironment{proof}{%
+%   \noindent\textbf{証明}\quad
+% }{%
+% \hspace{\fill}\square\\
+% }
+
+\newenvironment{claim}{%
+  \noindent\textbf{主張}\quad
+}{%
+
+}
+
+
+\newenvironment{remark}{%
+  \noindent\textbf{注意}\quad
+}{%
+
+}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\D}{\mathbb D}
+\newcommand{\A}{\mathbb A}
+\newcommand{\SO}{ SO}
+\newcommand{\M}{\mathsf{M}}
+\newcommand{\F}{\mathbb F}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\End}{\text{End}}
+\newcommand{\gee}{\mathfrak{g}}
+\newcommand{\haa}{\mathfrak{h}}
+\newcommand{\kaa}{\mathfrak{k}}
+\newcommand{\jee}{\mathfrak{J}}
+\newcommand{\slnc}{\mathfrak{sl}_n(\mathbb{C})}
+\newcommand{\glnc}{\mathfrak{gl}_n(\mathbb{C})}
+
+\newcommand{\dprime}{{\prime\prime}}
+
+
+\newcommand{\thmtext}{Text of theorem.}
+\DeclareMathOperator{\sgn}{sgn}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\spl}{SL}
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\Hom}{Hom}
+
+
+\newcommand{\conj}[1]{%
+  \overline{#1}%
+}
+
+
+
+
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+%Information to be included in the title page:
+\title{タイトル} %タイトルの指定
+\author{me} %著者
+\date{\today} %日付
+\begin{document}
+
+\titlepage
+
+\begin{frame}[fragile]
+  \frametitle{ }
+  
+\end{frame}
+
+\end{document}

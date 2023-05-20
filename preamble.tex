@@ -1,0 +1,136 @@
+% \documentclass[a5paper,8pt,landscape,twocolumn]{ltjsarticle}
+% \usepackage[utf8]{inputenc}
+
+%--------------------------------------------------------------------------------------
+%margin--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\usepackage[margin=20truemm]{geometry} 
+
+
+%--------------------------------------------------------------------------------------
+%packages------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\usepackage{amsmath, amssymb, amsfonts, latexsym, mathtools}
+\usepackage[amsmath,amsthm,thmmarks]{ntheorem}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{thmtools}
+\usepackage{cases}
+\usepackage{arydshln} % dotted line in matrix
+\setlength{\dashlinegap}{2pt}
+\setlength{\dashlinedash}{2pt}
+\usepackage{multicol,lipsum} % multiple columns
+\usepackage{hyperref} %reference
+\usepackage{mdframed} %for theorem frame
+
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes,shapes.geometric} % for pic
+\usetikzlibrary{positioning, calc}
+\usepackage[outline]{contour} % glow around text
+\contourlength{1.2pt}
+
+\usepackage[inline]{enumitem}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\hdots@for}{\hfill}{\hskip\z@\@plus 1filll}{}{}
+\makeatother
+
+
+
+\theorembodyfont{\normalfont} % This prevents italic font in theorem
+%--------------------------------------------------------------------------------------
+%  Normal enviroment-----------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{定義}
+\newtheorem{corollary}[theorem]{系}
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{example}[theorem]{例}
+
+%--------------------------------------------------------------------------------------
+% Framed Enviroment-----------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\newmdtheoremenv[linewidth=1pt]{mydef}[theorem]{定義}
+\newmdtheoremenv[linewidth=1pt]{mythm}[theorem]{定理}
+\newmdtheoremenv[linewidth=1pt]{myprop}[theorem]{命題}
+\newmdtheoremenv[linewidth=1pt]{mylem}[theorem]{補題}
+\newmdtheoremenv[linewidth=1pt]{mycol}[theorem]{系}
+
+
+%--------------------------------------------------------------------------------------
+%Math Symbols--------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\D}{\mathbb D}
+\newcommand{\E}{\mathbb E}
+\newcommand{\di}{\text{D}}
+\newcommand{\A}{\mathbb A}
+\newcommand{\SO}{SO}
+\newcommand{\M}{\mathsf{M}}
+\newcommand{\F}{\mathbb F}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\End}{\text{End}}
+\newcommand{\gee}{\mathfrak{g}}
+\newcommand{\haa}{\mathfrak{h}}
+\newcommand{\kaa}{\mathfrak{k}}
+\newcommand{\jee}{\mathfrak{J}}
+\newcommand{\slnc}{\mathfrak{sl}_n(\mathbb{C})}
+\newcommand{\glnc}{\mathfrak{gl}_n(\mathbb{C})}
+\newcommand{\dprime}{{\prime\prime}}
+\newcommand{\thmtext}{Text of theorem.}
+\newcommand{\class}{\mathcal{C}}
+\newcommand{\gl}{GL} %general linear group
+\newcommand{\spl}{SL}%Special linear group
+% \newcommand{\hom}{Hom}
+
+%--------------------------------------------------------------------------------------
+%Math Operators------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\DeclareMathOperator{\sgn}{sgn}%signature 
+\DeclareMathOperator{\Ima}{Im} %image
+\DeclareMathOperator{\id}{id} %identity map
+\DeclareMathOperator{\proj}{proj} %projection
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\spn}{span} 
+\DeclareMathOperator{\rk}{rk} 
+\newcommand*{\tran}{^{\mkern-1mu t}} %transpose #1
+\newcommand{\transpose}{^{\raisebox{.2ex}{$\intercal$}}}% transpose #2
+\newcommand{\eqdef}{\overset{\mathrm{def}}{=\joinrel=}}% def equal
+\newcommand{\conj}[1]{%
+  \overline{#1}%
+} %conjugation
+\newcommand{\inv}{^{\raisebox{.2ex}{\large{$\scriptscriptstyle{-1}$}}}}% inverse
+% \newcommand{\dprime}{^{\prime\prime}}
+
+
+\def\vdotfill#1{\vtop to0pt{\null \dimen0=#1\baselineskip\advance\dimen0 by-.4ex 
+\kern-1.6ex \cleaders\hbox{\lower.4ex\vbox to1ex{}.}\vskip\dimen0 \vss}}
+
+%--------------------------------------------------------------------------------------
+% Tikz------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+
+\tikzset{>=latex} % for LaTeX arrow head
+\tikzstyle{vector}=[->,very thick] %For vector
+
+%--------------------------------------------------------------------------------------
+%document title------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+
+\title{title}
+\author{name}
+\date{\today}
