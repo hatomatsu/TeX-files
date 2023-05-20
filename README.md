@@ -4,8 +4,7 @@ This repository stores my tex files.
 
 ## Release History
 
-* 0.0.1
-  * Work in progress
+* May 20, 2023 Added basic files.
 
 # Helpful Links
 
